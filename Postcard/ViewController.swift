@@ -46,6 +46,7 @@ class ViewController: UIViewController {
     
         mailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
         
+        //This file will be uploaded to github
     }
     
     
