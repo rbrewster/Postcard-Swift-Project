@@ -12,8 +12,13 @@ import UIKit
 // This class is named View Controller and is a subclass of UIViewController
 class ViewController: UIViewController {
 
-    //Add a label property of class UILabel which is an unwrapped optional
+    //Add a message label property of class UILabel which is an unwrapped optional
     @IBOutlet weak var messageLabel: UILabel!
+    
+    
+    //Add a name label property of class UILabel
+    @IBOutlet weak var nameLabel: UILabel!
+    
     
     //Add a text field property of class UITextField which is an unwrapped optional. We can unwrap them because we know they exist because we hooked them up in the staoryboard
     @IBOutlet weak var enterNameTextField: UITextField!
@@ -30,17 +35,35 @@ class ViewController: UIViewController {
     
     //Unhide the message label. you can get the names of many of the properties by looking at the attributes inspector. the hidden property has two states, either true or false.
         messageLabel.hidden = false
+        
+    //Unhide the name label
+        nameLabel.hidden = false
+        
     //Get the text from the enterAMessageTextField and Set messageLablet.text to it. (Set is always on the left and Get is always on the right)
         messageLabel.text = enterAMessageTextField.text
+        
+    //Get the text from the enterNameTextField and Set nameLablet.text to it. (Set is always on the left and Get is always on the right)
+        
+        nameLabel.text = enterNameTextField.text
         
         //set the message text field to blank
         enterAMessageTextField.text = ""
         
-        //Make the keyboard disappear. This will occur right after the text in the enterAMessageTextField disappears.
+        //set the name text field to blank
+       enterNameTextField.text = ""
+        
+        
+        //Make the keyboard disappear. This will occur right after the text in the enterAMessageTextField or enterNameTextField disappears.
         enterAMessageTextField.resignFirstResponder()
+        enterNameTextField.resignFirstResponder()
+        
+        
         
         //Change the color of the text in the messageLabel to red. Tap the alt key then ".textColor" and you will see that .textColor is of type UIColor so the getter needs to be of type UIColor. UIColor has a class method call redColor. There is also a UIColor method directly than enable you to enter the RGB and alpha of a custom color
         messageLabel.textColor = UIColor.redColor()
+        
+        //Do the same as above the nameLabel
+        nameLabel.textColor = UIColor.blueColor()
         
         //Change the text within the Send Mail button. Since this is a button and not a text field, it has a Title and not text. UIControlState enable you to determine when the title is change. For example, if the user was pressing the button or not pressing the button. You can therefore have a different title for different states of the button.
     

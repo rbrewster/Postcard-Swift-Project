@@ -105,6 +105,14 @@
                                     <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4o2-wJ-3nI"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBI-Hf-pZC">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="22" y="144" width="194" height="37"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -114,6 +122,7 @@
                                 <exclude reference="RC3-l4-B4y"/>
                                 <exclude reference="0a4-QN-L5I"/>
                                 <exclude reference="tBC-TL-4N0"/>
+                                <exclude reference="bBI-Hf-pZC"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -123,6 +132,7 @@
                                 <include reference="RC3-l4-B4y"/>
                                 <include reference="0a4-QN-L5I"/>
                                 <include reference="tBC-TL-4N0"/>
+                                <include reference="bBI-Hf-pZC"/>
                             </mask>
                         </variation>
                     </view>
@@ -133,6 +143,7 @@
                         <outlet property="enterNameTextField" destination="J9p-xd-BLF" id="3qK-MT-AKv"/>
                         <outlet property="mailButton" destination="tBC-TL-4N0" id="PNI-Yl-8Fs"/>
                         <outlet property="messageLabel" destination="0a4-QN-L5I" id="0WH-YW-vZx"/>
+                        <outlet property="nameLabel" destination="bBI-Hf-pZC" id="r0G-13-htU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
